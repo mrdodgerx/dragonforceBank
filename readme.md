@@ -25,8 +25,8 @@ This script automates interactions with the DragonForce DBTech Shop using Python
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/mrdodgerx/dragonforceBank.git
+   cd dragonforceBank
    ```
 
 2. **Create a virtual environment (optional but recommended):**
