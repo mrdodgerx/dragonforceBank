@@ -1,7 +1,3 @@
-Here's a disclaimer you can include in your project:
-
----
-
 ## Disclaimer
 
 **Use at Your Own Risk**
@@ -17,7 +13,3 @@ This software is provided "as-is" and comes with no warranties or guarantees. Th
 - **Changes and Updates:** The DragonForce IO platform or any other system may change its structure or API, which could render this script ineffective or cause it to malfunction. The creator is not obligated to update or maintain this script in response to such changes.
 
 By using this software, you acknowledge and agree to these terms. If you do not agree with these terms, do not use the software.
-
----
-
-Feel free to tailor this disclaimer to better fit your specific needs or legal requirements.
