@@ -102,7 +102,7 @@ class DC_SHOP:
         self.top5 = None
 
     def withdraw(self,value):
-        data = f'------{self.web_form}\r\nContent-Disposition: form-data; name="_xfToken"\r\n\r\n{self.obj['data_csrf']}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="points"\r\n\r\n{value}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfRequestUri"\r\n\r\n/dbtech-shop/bank/\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfWithData"\r\n\r\n1\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfToken"\r\n\r\n{self.obj['data_csrf']}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfResponseType"\r\n\r\njson\r\n------{self.web_form}--\r\n'
+        data = f'------{self.web_form}\r\nContent-Disposition: form-data; name="_xfToken"\r\n\r\n{self.obj["data_csrf"]}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="points"\r\n\r\n{value}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfRequestUri"\r\n\r\n/dbtech-shop/bank/\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfWithData"\r\n\r\n1\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfToken"\r\n\r\n{self.obj["data_csrf"]}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfResponseType"\r\n\r\njson\r\n------{self.web_form}--\r\n'
 
         response = requests.post(
             'https://www.dragonforce.io/dbtech-shop/bank/dragoncoin.2/withdraw',
@@ -117,7 +117,7 @@ class DC_SHOP:
             return f"{Fore.MAGENTA}Something error cannot withdraw {value}{Style.RESET_ALL}"
 
     def deposit(self,value):
-        data = f'------{self.web_form}\r\nContent-Disposition: form-data; name="_xfToken"\r\n\r\n{self.obj['data_csrf']}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="points"\r\n\r\n{value}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfRequestUri"\r\n\r\n/dbtech-shop/bank/\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfWithData"\r\n\r\n1\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfToken"\r\n\r\n{self.obj['data_csrf']}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfResponseType"\r\n\r\njson\r\n------{self.web_form}--\r\n'
+        data = f'------{self.web_form}\r\nContent-Disposition: form-data; name="_xfToken"\r\n\r\n{self.obj["data_csrf"]}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="points"\r\n\r\n{value}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfRequestUri"\r\n\r\n/dbtech-shop/bank/\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfWithData"\r\n\r\n1\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfToken"\r\n\r\n{self.obj["data_csrf"]}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfResponseType"\r\n\r\njson\r\n------{self.web_form}--\r\n'
 
         response = requests.post(
             'https://www.dragonforce.io/dbtech-shop/bank/dragoncoin.2/deposit',
@@ -153,7 +153,7 @@ class DC_SHOP:
         data = {
             '_xfRequestUri': '/dbtech-shop/bank/',
             '_xfWithData': '1',
-            '_xfToken': self.obj['data_csrf'],
+            '_xfToken': self.obj["data_csrf"],
             '_xfResponseType': 'json',
         }
 
@@ -163,7 +163,7 @@ class DC_SHOP:
         return f"{Fore.RED}Error In read Message{Style.RESET_ALL}"
     
     def curi(self,username=''):
-        data = f'------{self.web_form}\r\nContent-Disposition: form-data; name="_xfToken"\r\n\r\n{self.obj['data_csrf']}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="username"\r\n\r\n{username}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="currency_id"\r\n\r\n2\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfRequestUri"\r\n\r\n/dbtech-shop/steal/\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfWithData"\r\n\r\n1\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfToken"\r\n\r\n{self.obj['data_csrf']}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfResponseType"\r\n\r\njson\r\n------{self.web_form}--\r\n'
+        data = f'------{self.web_form}\r\nContent-Disposition: form-data; name="_xfToken"\r\n\r\n{self.obj["data_csrf"]}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="username"\r\n\r\n{username}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="currency_id"\r\n\r\n2\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfRequestUri"\r\n\r\n/dbtech-shop/steal/\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfWithData"\r\n\r\n1\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfToken"\r\n\r\n{self.obj["data_csrf"]}\r\n------{self.web_form}\r\nContent-Disposition: form-data; name="_xfResponseType"\r\n\r\njson\r\n------{self.web_form}--\r\n'
 
         response = requests.post('https://www.dragonforce.io/dbtech-shop/steal/', cookies=self.cookies, headers=self.headers, data=data)
         if response.status_code == 200:
@@ -180,7 +180,7 @@ class DC_SHOP:
             # 'user_id': '34520',
             '_xfRequestUri': '/',
             '_xfWithData': '1',
-            '_xfToken': self.obj['data_csrf'],
+            '_xfToken': self.obj["data_csrf"],
             '_xfResponseType': 'json',
         }
 
